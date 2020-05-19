@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             if (event.action == KeyEvent.ACTION_DOWN &&
                 keyCode == KeyEvent.KEYCODE_ENTER
             ) {
-                if (editText?.text.toString()!=="") {
+                if (editText.text.isNotEmpty()) {
                     // сохраняем текст, введенный до нажатия Enter в переменную
                     StringTextView.text = editText?.text.toString()
                     if (editText?.text.toString().toInt() == 5) {
